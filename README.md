@@ -1,2 +1,2 @@
 # DynamicCharge.github.io
-My portfolio
+Сайт портфолио веб-разработчика
