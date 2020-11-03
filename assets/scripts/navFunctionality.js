@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+    $('.nav_menu a').each(function () {
+        var location = window.location.href;
+        var link = this.href;
+        if(location == link) {
+            $(this).addClass('active');
+        }
+    });
+
     window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
         if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
@@ -9,5 +17,6 @@ $(document).ready(function () {
             $('.nav_bar').attr('style','padding: 59px 0px; background: none;');
         }
     }
+
 
 });
