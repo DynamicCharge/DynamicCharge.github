@@ -45,6 +45,11 @@ p {
     padding: 0;
     text-align: left;
 }
+._active {
+    transform: translate(0,0) !important;
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
 
 header {
 
@@ -142,12 +147,9 @@ header .container {
 
     transform: translate(-50%, 0px);
     opacity: 0;
-    transition: all 0.8s ease 0s;
+    transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
 }
-.main_img._active {
-    transform: translate(0, 0);
-    opacity: 1;
-}
+
 .title_text {
     display: flex;
     justify-content: left;
@@ -160,21 +162,14 @@ header .container {
 
     transform: translate(50%, 0px);
     opacity: 0;
-    transition: all 0.8s;
-}
-.text_header._active {
-    transform: translate(0px, 0px);
-    opacity: 1;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .text_paragr {
     transform: translate(0, 100%);
     opacity: 0;
-    transition: all 0.8s ease 0.5s;
+    transition: transform 0.8s,  opacity 0.8s;
 }
-.text_paragr._active {
-    transform: translate(0, 0px);
-    opacity: 1;
-}
+
 
 #portfolio {
     
@@ -213,22 +208,16 @@ header .container {
 }
 .list_item:hover {
     transform: scale(1.1) !important;
-    transition: all 0.8s ease 0s !important;
 }
 .list_item:nth-child(odd) {
     transform: translate(-100%, 0);
     opacity: 0;
-    transition: all 0.8s ease 0s;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .list_item:nth-child(even) {
     transform: translate(100%, 0);
     opacity: 0;
-    transition: all 0.8s ease 0s;
-}
-.list_item._active {
-    transform: translate(0, 0);
-    opacity: 1;
-    transition: 1.0s;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .item_description {
     font-weight: normal;
@@ -256,11 +245,7 @@ header .container {
 .see_more{
     transform: translate(0, 100%);
     opacity: 0;
-    transition: all 0.8s ease 0s;
-}
-.see_more._active {
-    transform: translate(0, 0);
-    opacity: 1;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 
 #services {
@@ -278,11 +263,7 @@ header .container {
 
     transform: translate(-100%, 0);
     opacity: 0;
-    transition: all 0.8s ease 0s;
-}
-.services_header._active {
-    transform: translate(0, 0);
-    opacity: 1;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .services_container {
     width: 550px;
@@ -292,16 +273,15 @@ header .container {
 }
 .services_container_item {
     width: 250px;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .services_container_item:nth-child(odd) {
     transform: translate(0, 100%);
     opacity: 0;
-    transition: all 0.8s ease 0.3s;
 }
 .services_container_item:nth-child(even) {
     transform: translate(0, -100%);
     opacity: 0;
-    transition: all 0.8s ease 0.3s;
 }
 .services_container._active .services_container_item {
     transform: translate(0, 0);
@@ -338,27 +318,27 @@ header .container {
 .process_item._active .left {
     transform: translate(0, 0);
     opacity: 1;
-    transition: all 0.8s ease 0.3s;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .right {
     transform: translate(50%, 0);
     opacity: 0;
-    transition: all 0.8s ease 0.5s;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .process_item._active .right, .process_item._active .process_item_item:nth-child(1) .right{
     transform: translate(0, 0);
     opacity: 1;
-    transition: all 0.8s ease 0.5s;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .process_item._active .right, .process_item._active .process_item_item:nth-child(2) .right{
     transform: translate(0, 0);
     opacity: 1;
-    transition: all 0.8s ease 0.7s;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .process_item._active .right, .process_item._active .process_item_item:nth-child(3) .right{
     transform: translate(0, 0);
     opacity: 1;
-    transition: all 0.8s ease 0.9s;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .left_desc {
     transform: translate(0, 200%);
@@ -367,27 +347,27 @@ header .container {
 .process_item._active .left_desc{
     transform: translate(0, 0);
     opacity: 1;
-    transition: all 0.8s ease 0.9s;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .right_desc {
     transform: translate(100%, 0);
     opacity: 0;
-    transition: all 0.8s ease 0.9s;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .process_item._active .right, .process_item._active .process_item_item:nth-child(1) .right_desc {
     transform: translate(0, 0);
     opacity: 1;
-    transition: all 0.8s ease 0.9s;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .process_item._active .right, .process_item._active .process_item_item:nth-child(2) .right_desc {
     transform: translate(0, 0);
     opacity: 1;
-    transition: all 0.8s ease 1.2s;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .process_item._active .right, .process_item._active .process_item_item:nth-child(3) .right_desc {
     transform: translate(0, 0);
     opacity: 1;
-    transition: all 0.8s ease 1.3s;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .process_item_item {
     margin-bottom: 50px;
@@ -417,22 +397,12 @@ header .container {
 
     transform: translate(50%, 0);
     opacity: 0;
-    transition: all 0.8s ease 0s;
-}
-.about_text_header._active {
-    transform: translate(0, 0);
-    opacity: 1;
-    transition: all 0.8s ease 0s;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .about_text_paragr {
     transform: translate(0, 100%);
     opacity: 0;
-    transition: all 0.8s ease 0s;
-}
-.about_text_paragr._active {
-    transform: translate(0, 0);
-    opacity: 1;
-    transition: all 0.8s ease 0.3s;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .about_img {
     width: 550px;
@@ -441,12 +411,7 @@ header .container {
 
     transform: translate(0, 50%);
     opacity: 0;
-    transition: all 0.5s ease 0s;
-}
-.about_img._active {
-    transform: translate(0, 0);
-    opacity: 1;
-    transition: all 0.9s ease 0s;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .about_text_container span {
     font-style: normal;
@@ -476,22 +441,12 @@ header .container {
 
     transform: translate(0, -50%);
     opacity: 0;
-    transition: all 0.5s ease 0s;
-}
-.details_header._active {
-    transform: translate(0, 0);
-    opacity: 1;
-    transition: all 0.5s ease 0.3s;
+    transition: transform 0.8s,  opacity 0.8s;
 }
 .show_details {
     transform: translate(0, 50%);
     opacity: 0;
-    transition: all 0.5s ease 0s;
-}
-.show_details._active {
-    transform: translate(0, 0);
-    opacity: 1;
-    transition: all 0.5s ease 0s;
+    transition: transform 0.5s,  opacity 0.5s;
 }
 
 footer {
@@ -510,12 +465,7 @@ footer .container {
 
     transform: translate(-50%, 0);
     opacity: 0;
-    transition: all 0.5s ease 0.1s;
-}
-.copyright._active {
-    transform: translate(0, 0);
-    opacity: 1;
-    transition: all 0.8s ease 0s;
+    transition: transform 0.5s,  opacity 0.5s;
 }
 .footer_social {
     display: flex;
@@ -537,29 +487,20 @@ footer .container {
     justify-content: center;
     align-items: center;
     transition: all 0.5s;
-
-    transform: scale(0);
+    transform: scale(0) ;
     opacity: 0;
 }
-.social_item._active {
-    transform: scale(1);
-    opacity: 1;
-    transition: all 0.8s ease 0s;
-}
 .vk:hover{
-    transition: 0.5s;
     color: #0066FF;
     box-shadow: 0 0 15px #0066FF;
     border-color: #0066FF;
 }
 .instagram:hover{
-    transition: 0.5s;
     color: #FF006B;
     box-shadow: 0 0 15px #FF006B;
     border-color: #FF006B;
 }
 .whatsapp:hover{
-    transition: 0.5s;
     color: #3DEC00;
     box-shadow: 0 0 15px #3DEC00;
     border-color: #3DEC00;
