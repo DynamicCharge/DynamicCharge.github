@@ -520,6 +520,7 @@ footer .container {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 50px;
 }
 .section_header {
     display: flex;
